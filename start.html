@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="Руководство для новичков в мире настольных игр: советы, рекомендации и полезные ресурсы.">
+    <meta name="keywords" content="как начать играть в настольные игры, настольные игры для начинающих, выбор игры, ресурсы настольных игр">
+    <title>Как начать играть в настольные игры</title>
+    <style>
+         body {
+             font-family: sans-serif;
+             margin: 20px;
+             line-height: 1.6;
+             background-color: #f9f9f9; /* Светло-серый фон */
+             color: #333;
+              transition: background-color 0.3s ease, color 0.3s ease;
+          }
+            body.dark-theme {
+             background-color: #1a1a1a; /* Темно-серый фон */
+             color: #eee; /* Светлый текст */
+        }
+
+          .dark-theme h1,
+         .dark-theme h2,
+          .dark-theme h3 {
+            color: #fff; /* Белый цвет для заголовков в темной теме */
+         }
+
+
+         h1, h2, h3 {
+             color: #2c3e50;
+             margin-bottom: 15px;
+        }
+         h1 {
+             text-align: center;
+         }
+
+           h2 {
+             border-bottom: 1px solid #ddd;
+              padding-bottom: 5px;
+          }
+        img {
+             max-width: 300px;
+              border-radius: 8px;
+              box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+         }
+           p {
+            margin-bottom: 15px;
+           }
+           ul {
+              list-style-type: disc;
+             margin-left: 20px;
+              margin-bottom: 20px;
+            }
+         table {
+             border-collapse: collapse;
+             width: 80%;
+             margin: 20px auto;
+          }
+           th, td {
+             border: 1px solid #ddd;
+             padding: 10px;
+              text-align: left;
+         }
+         th {
+             background-color: #f2f2f2;
+           }
+           .dark-theme th {
+             background-color: #333; /* Темный цвет для заголовков таблицы в темной теме */
+          }
+          a {
+              color: #3498db; /* Голубой для ссылок */
+              text-decoration: none;
+              transition: color 0.3s ease;
+          }
+
+         .dark-theme a {
+          color: #5bc0de; /* Измененный цвет ссылок в темной теме*/
+         }
+
+
+        a:hover {
+           text-decoration: underline;
+         }
+        .dark-theme a:hover {
+          text-decoration: underline; /* Подчеркивание при наведении в темной теме*/
+        }
+           .theme-toggle-button {
+             background-color: #3498db;
+            color: white;
+             border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+           margin-bottom: 10px;
+             transition: background-color 0.3s ease;
+         }
+         .theme-toggle-button:hover{
+           background-color: #2377aa;
+         }
+          @media (max-width: 768px) {
+               img {
+                  max-width: 100%;
+                   float: none !important;
+                     margin: 10px auto;
+                   display: block;
+               }
+                table {
+                  width: 100%;
+                  }
+           }
+        </style>
+</head>
+<body>
+     <button class="theme-toggle-button" onclick="toggleTheme()">Переключить тему</button>
+    <h1>С чего начать?</h1>
+      <img src="images/beginner.jpg" alt="Новичок за настольной игрой" style="float: right; margin-left: 20px;">
+
+    <h2>Как выбрать первую игру?</h2>
+    <p>
+        Начать свой путь в мире настольных игр лучше с чего-то простого и понятного. Выберите игру, которая соответствует вашим интересам и количеству игроков.
+    </p>
+     <p>
+        Не стоит сразу браться за сложные стратегии – начните с игр с простыми правилами, чтобы получить удовольствие от процесса и не испугаться сложностей.
+    </p>
+
+    <h2>Где найти единомышленников?</h2>
+     <p>
+         Если ваши друзья не разделяют ваше увлечение, это не беда! Найти компанию для игры можно в различных местах:
+    </p>
+    <ul>
+        <li>В клубах настольных игр</li>
+        <li>На тематических форумах</li>
+        <li>В социальных сетях</li>
+    </ul>
+
+    <h2 id="resources">Полезные ресурсы</h2>
+    <p>
+        Для более подробной информации об играх и их выборе вы можете воспользоваться следующими ресурсами:
+    </p>
+
+    <table>
+       <tr>
+         <th>Советы</th>
+        </tr>
+      <tr>
+          <td>Начните с простых игр</td>
+      </tr>
+      <tr>
+          <td>Играйте с друзьями или семьей</td>
+      </tr>
+      <tr>
+         <td>Смотрите обзоры игр</td>
+        </tr>
+    </table>
+    <p><a href="index.html">Вернуться на главную</a></p>
+     <p><a href="games.html">Узнать больше о видах настольных игр</a></p>
+      <p><a href="#resources">Ресурсы</a> - ссылка на раздел "Ресурсы"</p>
+      <p><a href="https://tesera.ru/" target="_blank">Тесера</a> - огромная база данных настольных игр и сообщество.</p>
+      <script>
+        function toggleTheme() {
+         const body = document.body;
+          body.classList.toggle("dark-theme");
+        }
+    </script>
+
+</body>
+</html>

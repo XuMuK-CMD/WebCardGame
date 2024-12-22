@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Обзор различных видов настольных игр: стратегии, карточные, семейные и другие.">
+    <meta name="keywords" content="виды настольных игр, стратегии, карточные игры, кооперативные игры, игры для компании">
+    <title>Разнообразие настольных игр</title>
+      <style>
+          body {
+             font-family: sans-serif;
+             margin: 20px;
+             line-height: 1.6;
+             background-color: #f9f9f9; /* Светло-серый фон */
+             color: #333;
+             transition: background-color 0.3s ease, color 0.3s ease;
+          }
+
+           body.dark-theme {
+             background-color: #1a1a1a; /* Темно-серый фон */
+             color: #eee; /* Светлый текст */
+        }
+
+         .dark-theme h1,
+         .dark-theme h2,
+          .dark-theme h3 {
+            color: #fff; /* Белый цвет для заголовков в темной теме */
+         }
+
+          h1, h2, h3 {
+             color: #2c3e50;
+              margin-bottom: 15px;
+            }
+           h1 {
+             text-align: center;
+            }
+
+            h2 {
+              border-bottom: 1px solid #ddd;
+               padding-bottom: 5px;
+           }
+
+            img {
+                max-width: 300px;
+                 border-radius: 8px;
+                 box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+           p {
+              margin-bottom: 15px;
+            }
+             ul {
+               list-style-type: disc;
+               margin-left: 20px;
+               margin-bottom: 20px;
+            }
+           a {
+             color: #3498db; /* Голубой для ссылок */
+             text-decoration: none;
+            transition: color 0.3s ease;
+            }
+
+         .dark-theme a {
+          color: #5bc0de; /* Измененный цвет ссылок в темной теме*/
+        }
+
+
+           a:hover {
+             text-decoration: underline;
+            }
+        .dark-theme a:hover {
+          text-decoration: underline; /* Подчеркивание при наведении в темной теме*/
+        }
+        .theme-toggle-button {
+             background-color: #3498db;
+            color: white;
+             border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+           margin-bottom: 10px;
+             transition: background-color 0.3s ease;
+         }
+         .theme-toggle-button:hover{
+           background-color: #2377aa;
+         }
+
+           @media (max-width: 768px) {
+              img {
+                   max-width: 100%;
+                     float: none !important;
+                      margin: 10px auto;
+                   display: block;
+              }
+          }
+        </style>
+</head>
+<body>
+    <button class="theme-toggle-button" onclick="toggleTheme()">Переключить тему</button>
+    <h1>Виды настольных игр</h1>
+
+    <h2 id="strategy">Стратегии</h2>
+      <img src="images/strategy.jpg" alt="Стратегические настольные игры" style="float: right; margin-left: 20px;">
+    <p>
+        Стратегические настольные игры требуют от игроков планирования, анализа и принятия решений. Они могут быть очень сложными и глубокими, но при этом очень увлекательными.
+    </p>
+        <h3>Примеры</h3>
+      <ul>
+        <li>Сеттлерс</li>
+        <li>Каркассон</li>
+    </ul>
+
+    <h2 id="cards">Карточные игры</h2>
+    <img src="images/cards.jpg" alt="Карточные настольные игры" style="float: left; margin-right: 20px;">
+    <p>
+        Карточные игры – это огромный мир, от простых игр для компании до сложных карточных баталий. Они часто более динамичны и быстры, чем другие виды настольных игр.
+    </p>
+         <h3>Примеры</h3>
+      <ul>
+         <li>Уно</li>
+        <li>Манчкин</li>
+     </ul>
+
+    <h2>Кооперативные игры</h2>
+    <p>
+       В кооперативных играх игроки объединяются для достижения общей цели. Это отличный способ почувствовать себя частью команды и поучиться сотрудничеству.
+    </p>
+         <h3>Примеры</h3>
+      <ul>
+         <li>Пандемия</li>
+         <li>Ужас Аркхэма</li>
+     </ul>
+
+    <h2>Семейные игры</h2>
+      <p>
+        Семейные игры – это игры, подходящие для всех возрастов и уровней подготовки. Они обычно несложные и предназначены для веселого времяпрепровождения с семьей.
+    </p>
+      <h3>Примеры</h3>
+      <ul>
+        <li>Монополия</li>
+         <li>Диксит</li>
+      </ul>
+
+    <p><a href="index.html">Вернуться на главную</a></p>
+     <p><a href="start.html">Как начать играть в настольные игры?</a></p>
+     <p><a href="#strategy">Стратегии</a> - ссылка на раздел "Стратегии"</p>
+     <p><a href="https://hobbygames.ru/" target="_blank">Hobby Games</a> - интернет магазин настольных игр.</p>
+
+       <script>
+         function toggleTheme() {
+         const body = document.body;
+         body.classList.toggle("dark-theme");
+        }
+    </script>
+</body>
+</html>

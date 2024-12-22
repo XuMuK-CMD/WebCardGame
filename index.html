@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Увлекательный мир настольных игр: разнообразие, польза и возможности для развития.">
+    <meta name="keywords" content="настольные игры, хобби, досуг, развлечения, игры для компании">
+    <title>Настольные игры - хобби для всех</title>
+    <style>
+       body {
+            font-family: sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: #f9f9f9; /* Светло-серый фон */
+            color: #333;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+         body.dark-theme {
+             background-color: #1a1a1a; /* Темно-серый фон */
+             color: #eee; /* Светлый текст */
+        }
+
+         .dark-theme h1,
+         .dark-theme h2,
+          .dark-theme h3 {
+            color: #fff; /* Белый цвет для заголовков в темной теме */
+         }
+
+
+       h1, h2, h3 {
+            color: #2c3e50;
+             margin-bottom: 15px;
+        }
+        h1 {
+            text-align: center;
+        }
+
+         h2 {
+          border-bottom: 1px solid #ddd;
+          padding-bottom: 5px;
+         }
+        img {
+            max-width: 300px;
+             border-radius: 8px;
+             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+       p {
+          margin-bottom: 15px;
+        }
+         ul {
+           list-style-type: disc;
+           margin-left: 20px;
+           margin-bottom: 20px;
+        }
+         table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+        }
+        th, td {
+             border: 1px solid #ddd;
+             padding: 10px;
+             text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+         }
+
+           .dark-theme th {
+             background-color: #333; /* Темный цвет для заголовков таблицы в темной теме */
+          }
+
+        a {
+            color: #3498db; /* Голубой для ссылок */
+            text-decoration: none;
+               transition: color 0.3s ease;
+        }
+
+        .dark-theme a {
+          color: #5bc0de; /* Измененный цвет ссылок в темной теме*/
+       }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        .dark-theme a:hover {
+          text-decoration: underline; /* Подчеркивание при наведении в темной теме*/
+        }
+
+        .theme-toggle-button {
+             background-color: #3498db;
+            color: white;
+             border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+           margin-bottom: 10px;
+             transition: background-color 0.3s ease;
+         }
+         .theme-toggle-button:hover{
+           background-color: #2377aa;
+         }
+
+        @media (max-width: 768px) {
+              img {
+                max-width: 100%;
+                  float: none !important;
+                   margin: 10px auto;
+              display: block;
+               }
+              table {
+                 width: 100%;
+               }
+        }
+
+    </style>
+</head>
+<body >
+    <button class="theme-toggle-button" onclick="toggleTheme()">Переключить тему</button>
+    <h1>Настольные игры - это весело и полезно!</h1>
+    <img src="images/boardgame.jpg" alt="Разнообразие настольных игр" style="float: left; margin-right: 20px;">
+    <p>
+        Настольные игры – это не просто развлечение, это целый мир, полный возможностей для развития, общения и веселого времяпрепровождения. Они пользуются огромной популярностью среди людей всех возрастов и интересов, и на это есть много причин.
+    </p>
+    <p>
+        В мире, где большую часть времени мы проводим за экранами компьютеров и телефонов, настольные игры предлагают живое общение и взаимодействие с друзьями и семьей. Они помогают отвлечься от повседневной суеты, насладиться процессом игры и укрепить взаимоотношения.
+    </p>
+
+    <h2>Почему настольные игры так популярны?</h2>
+
+    <h3 id="benefits">Развитие навыков</h3>
+    <p>
+       Настольные игры отлично развивают стратегическое мышление, логику, память и внимательность. Многие из них требуют планирования, анализа ситуации и принятия решений. Это делает их не только увлекательным, но и полезным занятием.
+    </p>
+
+    <h3>Социализация</h3>
+    <p>
+       Настольные игры способствуют социализации, так как в них часто играют группами. Это отличный способ провести время с близкими, познакомиться с новыми людьми и научиться работать в команде.
+    </p>
+
+    <p>
+        <ul>
+            <li>Развитие стратегического мышления</li>
+            <li>Улучшение коммуникативных навыков</li>
+            <li>Просто приятное времяпрепровождение</li>
+        </ul>
+    </p>
+
+      <table>
+        <tr>
+           <th>Плюсы</th>
+           <th>Минусы</th>
+        </tr>
+        <tr>
+            <td>Развитие логики</td>
+            <td>Можно дорого стоить</td>
+        </tr>
+        <tr>
+            <td>Улучшение памяти</td>
+            <td>Занимают место</td>
+        </tr>
+        <tr>
+             <td>Общение с друзьями</td>
+             <td>Требуется время</td>
+         </tr>
+    </table>
+
+    <p><a href="games.html">Узнать больше о видах настольных игр</a></p>
+    <p><a href="start.html">Как начать играть в настольные игры?</a></p>
+
+     <p><a href="#benefits">Преимущества</a> - ссылка на раздел "Преимущества"</p>
+     <p><a href="https://www.igroved.ru/" target="_blank">Игровед</a> - один из крупнейших магазинов настольных игр.</p>
+
+     <script>
+         function toggleTheme() {
+         const body = document.body;
+         body.classList.toggle("dark-theme");
+        }
+    </script>
+
+</body>
+</html>
